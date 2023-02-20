@@ -318,7 +318,7 @@ gettext_additional_targets = [
 # -----------------------
 
 # Use our custom theme.
-html_theme = 'python_docs_theme'
+html_theme = 'sphinx_rtd_theme'
 html_theme_path = ['tools']
 html_theme_options = {
     'collapsiblesidebar': True,
