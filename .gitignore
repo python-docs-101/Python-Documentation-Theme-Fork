@@ -3,6 +3,7 @@
 #    https://github.com/python-docs-101/Python-Documentation-Theme-Fork
 ##########################################################################
 .config/*
+__notes__*
 
 ##########################################################################
 # Original .gitignore below this comment
