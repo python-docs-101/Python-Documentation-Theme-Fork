@@ -19,7 +19,8 @@ div.body a:visited {
 div.body a:hover {
     color: #00B0E4;
 }
-a code span.pre {
+/* minor edit to add scope `div.wy-nav-content` to fix sidebar */
+div.wy-nav-content a code span.pre {
     color: #2980b9;
 }
 
