@@ -318,10 +318,6 @@ gettext_additional_targets = [
 # -----------------------
 
 
-
-issues_url = '/bugs.html'
-license_url = '/license.html'
-
 ##<>=========================================================
 ## @@~@@ FORK MODIFIES THIS SECTOION -- replaced
 ##===========================================================
