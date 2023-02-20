@@ -344,6 +344,25 @@ gettext_additional_targets = [
 ##===========================================================
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = ['']
+
+#-------------------------------------------------------------------------
+# <>  RTD CSS Config
+#-------------------------------------------------------------------------
+# See
+#     https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html
+#-------------------------------------------------------------------------
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css_for_fork/py_rtd_fork.css',
+]
+#-------------------------------------------------------------------------
+# </> RTD CSS Config
+#-------------------------------------------------------------------------
+
 html_theme_options = {
             
     #***************************************************************
