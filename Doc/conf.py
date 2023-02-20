@@ -85,15 +85,144 @@ master_doc = 'contents'
 # Options for HTML output
 # -----------------------
 
-# Use our custom theme.
-html_theme = 'python_docs_theme'
-html_theme_path = ['tools']
+
+##<>=========================================================
+## @@~@@ FORK MODIFIES THIS SECTOION -- replaced
+##===========================================================
+## Original options using `html_theme = 'python_docs_theme'`
+##===========================================================
+# # Use our custom theme.
+# html_theme = 'python_docs_theme'
+# html_theme_path = ['tools']
+# html_theme_options = {
+#     'collapsiblesidebar': True,
+#     'issues_url': '/bugs.html',
+#     'license_url': '/license.html',
+#     'root_include_title': False   # We use the version switcher instead.
+# }
+##</>========================================================
+
+
+##<>=========================================================
+## @@~@@ FORK MODIFIES THIS SECTOION -- added
+##===========================================================
+## Original options using `html_theme = 'python_docs_theme'`
+##===========================================================
+html_theme = 'sphinx_rtd_theme'
+html_theme_path = ['']
+html_favicon = '_static/py.svg'
 html_theme_options = {
-    'collapsiblesidebar': True,
+    #-------------------------------------------------------------------
+    # Add these variables manually to:
+    #   Doc/venv/lib/python3.9/site-packages/sphinx_rtd_theme/theme.conf
+    # then they can be accessed via theme_issues_url + theme_license_url
+    #-------------------------------------------------------------------
     'issues_url': '/bugs.html',
     'license_url': '/license.html',
-    'root_include_title': False   # We use the version switcher instead.
+    
+    #***************************************************************
+    # DOCS: sphinx_rtd_theme :       collapse_navigation           * 
+    #***************************************************************
+    # Poorly named.                                                *
+    #                                                              *
+    # From     sphinx-rtd-theme.readthedocs.io:                    *
+    #                                                              *
+    #      Type:        boolean                                    *
+    #      Default:     True                                       *
+    #                                                              *
+    #      Description:                                            *
+    #                                                              *
+    #         With collapse_navigation enabled                     *
+    #                                                              * 
+    #            Navigation entries are not expandable             * 
+    #            – the [+] icons next to each entry are removed.   * 
+    #                                                              *
+    #***************************************************************
+    # This really means,                                           *
+    # "Do you want to collapse all the nav                         *
+    #  and not include sub-pages?"                                 *
+    #                                                              *
+    # We want to tell it:                                          *
+    #	"False, I wish to include sub-pages."                      *
+    #***************************************************************
+    'collapse_navigation': False,
+
+    #**********************************************************************
+    # DOCS: sphinx_rtd_theme :        navigation_depth                    *
+    #**********************************************************************
+    #                                                                     *
+    # From     sphinx-rtd-theme.readthedocs.io:                           *
+    #                                                                     *
+    #      Type:        integer                                           *
+    #      Default:     4                                                 *
+    #                                                                     *
+    #      Description:                                                   *
+    #                   The maximum depth of the table of contents tree.  *
+    #                   Set this to -1 to allow unlimited depth.          *
+    #                                                                     *
+    #**********************************************************************
+    'navigation_depth': -1,
+    
+    #************************************************************
+    # DOCS: sphinx_rtd_theme :        titles_only               *
+    #************************************************************
+    #                                                           *
+    # From     sphinx-rtd-theme.readthedocs.io:                 *
+    #                                                           *
+    #      Type:        boolean                                 *
+    #      Default:     False                                   *
+    #                                                           *
+    #      Description:                                         *
+    #                   When enabled, page subheadings          *
+    #                   are not included in the navigation.     *
+    #                                                           *
+    #************************************************************
+    'titles_only': False,
+
+    #************************************************************
+    #  DOCS: sphinx_rtd_theme :           warning               *
+    #************************************************************
+    #                                                           *
+    #  Note:                                                    *
+    #                                                           *
+    #   Setting collapse_navigation to False                    *
+    #   and using a high value for navigation_depth             *
+    #   on projects with many files and a deep file structure   *
+    #                                                           *
+    #   can cause long compilation times                        *
+    #   and can result in HTML files                            *
+    #     that are significantly larger in file size.           *
+    #                                                           *
+    #************************************************************
 }
+
+##</>========================================================
+## @@~@@ FORK MODIFIES THIS SECTOION -- added
+## endof update
+##===========================================================
+
+##-------------------------------------------------------------------------
+## <>  RTD CSS Config
+##-------------------------------------------------------------------------
+## See
+##     https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html
+##-------------------------------------------------------------------------
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css_for_fork/py_rtd_fork.css',
+]
+##-------------------------------------------------------------------------
+## </> RTD CSS Config
+##-------------------------------------------------------------------------
+
+
+
+
+
 
 # Override stylesheet fingerprinting for Windows CHM htmlhelp to fix GH-91207
 # https://github.com/python/cpython/issues/91207
