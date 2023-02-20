@@ -56,3 +56,24 @@ a.brackets:before {
 a.brackets:after {
     content: "]";
 }
+
+
+/* Import from original theme. */
+span.linkdescr {
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 90%;
+}
+a.biglink {
+    font-size: 1.3em;
+}
+
+div.footer {
+    line-height: 150%;
+    margin-top: -2em;
+    text-align: right;
+    width: auto;
+    margin-right: 10px;
+    font-size: 75%;
+    padding: 9px 0 9px 0;
+}
