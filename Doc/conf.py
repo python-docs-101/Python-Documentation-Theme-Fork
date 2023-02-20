@@ -116,6 +116,11 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_path = ['']
 html_favicon = '_static/py.svg'
 html_theme_options = {
+    #-------------------------------------------------------------------
+    # Add these variables manually to:
+    #   Doc/venv/lib/python3.9/site-packages/sphinx_rtd_theme/theme.conf
+    # then they can be accessed via theme_issues_url + theme_license_url
+    #-------------------------------------------------------------------
     'issues_url': '/bugs.html',
     'license_url': '/license.html',
     
