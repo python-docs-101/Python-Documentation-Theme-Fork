@@ -319,6 +319,8 @@ gettext_additional_targets = [
 
 
 
+issues_url = '/bugs.html'
+license_url = '/license.html'
 
 ##<>=========================================================
 ## @@~@@ FORK MODIFIES THIS SECTOION -- replaced
@@ -346,7 +348,9 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_path = ['']
 html_favicon = '_static/py.svg'
 html_theme_options = {
-            
+    'issues_url': '/bugs.html',
+    'license_url': '/license.html',
+    
     #***************************************************************
     # DOCS: sphinx_rtd_theme :       collapse_navigation           * 
     #***************************************************************
