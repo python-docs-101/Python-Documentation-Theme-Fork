@@ -112,25 +112,7 @@ master_doc = 'contents'
 ##===========================================================
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = ['']
-
-#-------------------------------------------------------------------------
-# <>  RTD CSS Config
-#-------------------------------------------------------------------------
-# See
-#     https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html
-#-------------------------------------------------------------------------
-# These folders are copied to the documentation's HTML output
-html_static_path = ['_static']
-
-# These paths are either relative to html_static_path
-# or fully qualified paths (eg. https://...)
-html_css_files = [
-    'css_for_fork/py_rtd_fork.css',
-]
-#-------------------------------------------------------------------------
-# </> RTD CSS Config
-#-------------------------------------------------------------------------
-
+html_favicon = '_static/py.svg'
 html_theme_options = {
             
     #***************************************************************
@@ -213,6 +195,26 @@ html_theme_options = {
 ## @@~@@ FORK MODIFIES THIS SECTOION -- added
 ## endof update
 ##===========================================================
+
+##-------------------------------------------------------------------------
+## <>  RTD CSS Config
+##-------------------------------------------------------------------------
+## See
+##     https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html
+##-------------------------------------------------------------------------
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css_for_fork/py_rtd_fork.css',
+]
+##-------------------------------------------------------------------------
+## </> RTD CSS Config
+##-------------------------------------------------------------------------
+
+
 
 
 
