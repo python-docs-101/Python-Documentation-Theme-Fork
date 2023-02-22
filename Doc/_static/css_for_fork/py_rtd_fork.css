@@ -78,3 +78,15 @@ div.footer {
     font-size: 75%;
     padding: 9px 0 9px 0;
 }
+
+
+a.icon.icon-home::before {
+    content: '';
+    height: 21px;
+    width: 21px;
+    margin-left: -8px;
+    margin-bottom: -4px;
+    background: url(python-docs-101.github.io/_static/py.svg);
+    background-size: 19px 20px;
+    background-repeat: no-repeat;
+}

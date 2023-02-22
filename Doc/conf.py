@@ -111,6 +111,7 @@ master_doc = 'contents'
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = ['']
 html_favicon = '_static/py.svg'
+# html_logo = '_static/py.svg'
 html_theme_options = {
     #-------------------------------------------------------------------
     # Add these variables manually to:
