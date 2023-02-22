@@ -86,7 +86,7 @@ a.icon.icon-home::before {
     width: 21px;
     margin-left: -8px;
     margin-bottom: -4px;
-    background: url(python-docs-101.github.io/_static/py.svg);
+    background: url(https://python-docs-101.github.io/_static/py.svg);
     background-size: 19px 20px;
     background-repeat: no-repeat;
 }
