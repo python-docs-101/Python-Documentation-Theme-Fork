@@ -26,8 +26,8 @@ Product
 ^^^^^^^^^^^^
 Baked website output from this repo's cusomizations will live in this GitHub Pages repo:
 
-* https://github.com/python-docs-101/python-docs-101.github.io
+* https://github.com/python-sidebar/python-sidebar.github.io
 
 The docs will be served on GitHub Pages here:
 
-* https://python-docs-101.github.io
+* https://python-sidebar.github.io
