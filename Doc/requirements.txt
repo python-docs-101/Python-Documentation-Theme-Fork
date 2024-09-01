@@ -1,6 +1,6 @@
 ##########################################################################
 # Added by this RTD fork repo:
-#    https://github.com/python-docs-101/Python-Documentation-Theme-Fork
+#    https://github.com/python-sidebar/Python-Documentation-Fork-With-TOC
 ##########################################################################
 
 sphinx_rtd_theme

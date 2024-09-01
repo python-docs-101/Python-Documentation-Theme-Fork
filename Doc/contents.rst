@@ -26,10 +26,10 @@
    
    ---------------------- <glossary.rst>
    
-   Python Module Index <https://python-docs-101.github.io/py-modindex.html>
-   General Index <https://python-docs-101.github.io/genindex.html>
-   Search page <https://python-docs-101.github.io/search.html>
-   Complete TOC <https://python-docs-101.github.io/contents.html>
+   Python Module Index <https://python-sidebar.github.io/py-modindex.html>
+   General Index <https://python-sidebar.github.io/genindex.html>
+   Search page <https://python-sidebar.github.io/search.html>
+   Complete TOC <https://python-sidebar.github.io/contents.html>
    glossary.rst
    
    ---------------------- <glossary.rst>
